@@ -28,13 +28,13 @@ const Form = () => {
         </h1>
         <input
           type="text"
-          placeholder="Enter your name"
+          placeholder="Enter your firstname"
           onChange={inputChangeOne}
           value={firstnameInput}
         />
         <input
           type="text"
-          placeholder="Enter your name"
+          placeholder="Enter your lastname"
           onChange={inputChangeTwo}
           value={lastnameInput}
         />

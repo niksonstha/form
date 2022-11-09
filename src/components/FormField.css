@@ -31,3 +31,6 @@ button {
   cursor: pointer;
   border: none;
 }
+span {
+  font-size: 2rem;
+}
