@@ -17,31 +17,23 @@ const AnotherFormField = () => {
       //   console.log(prevValue);
       if (name === "fname") {
         return {
+          ...prevValue,
           fname: value,
-          lname: prevValue.lname,
-          email: prevValue.email,
-          phone: prevValue.phone,
         };
       } else if (name === "lname") {
         return {
-          fname: prevValue.fname,
-          email: prevValue.email,
-          phone: prevValue.phone,
+          ...prevValue,
           lname: value,
         };
       } else if (name === "email") {
         return {
-          fname: prevValue.fname,
+          ...prevValue,
           email: value,
-          phone: prevValue.phone,
-          lname: prevValue.lname,
         };
       } else if (name === "phone") {
         return {
-          fname: prevValue.fname,
-          email: prevValue.email,
+          ...prevValue,
           phone: value,
-          lname: prevValue.lname,
         };
       }
     });
